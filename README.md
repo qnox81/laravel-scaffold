@@ -31,13 +31,7 @@ $ docker-compose up -d
 ```
 - `yarn` container will install all packages from `packaga.json`
 
-3. install composer dependecies
-
-```bash
-$ docker-compose run composer install 
-```
-
-4. run artisan commands
+3. run artisan commands to prepare Laravel app
 
 ```bash
 $ docker-compose run artisan key:gen 
