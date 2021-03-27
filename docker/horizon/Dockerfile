@@ -1,4 +1,7 @@
 FROM app:local
+
+LABEL MANGOdev <team@mangodev.pl>
+
 USER root
 
 RUN apk add --update --no-cache wget curl supervisor \
