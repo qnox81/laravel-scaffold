@@ -37,5 +37,11 @@ $ docker-compose up -d
 $ docker-compose run artisan migrate
 ```
 
+4. start yarn watch
+
+```bash
+$ docker-compose run yarn watch
+```
+
 ## Licence
 MIT :)
