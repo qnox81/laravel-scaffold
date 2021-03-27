@@ -34,17 +34,17 @@ $ docker-compose up -d
 3. install composer dependecies
 
 ```bash
-$ docker-compose exec composer install 
+$ docker-compose run composer install 
 ```
 
 4. run artisan commands
 
 ```bash
-$ docker-compose exec artisan key:gen 
+$ docker-compose run artisan key:gen 
 ```
 
 ```bash
-$ docker-compose exec artisan migrate
+$ docker-compose run artisan migrate
 ```
 
 ## Licence
