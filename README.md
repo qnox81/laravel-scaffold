@@ -29,7 +29,10 @@ $ composer create-project --prefer-dist qnox81/laravel-scaffold app-name
 ```bash
 $ docker-compose up -d
 ```
-- `yarn` container will install all packages from `packaga.json`
+
+- `yarn` container will install all packages from `package.json`
+
+- wait until `mysql` and `yarn` containers stop initial boot
 
 3. run Laravel migration
 
@@ -37,10 +40,16 @@ $ docker-compose up -d
 $ docker-compose run artisan migrate
 ```
 
-4. start yarn watch
+4. generate Laravel key for docker env
 
 ```bash
-$ docker-compose run yarn watch
+$ docker-compose run artisan key:gen
+```
+
+5. compile asserts
+
+```bash
+$ docker-compose run yarn dev
 ```
 
 ## Jetstream + Intertia + Tailwind
