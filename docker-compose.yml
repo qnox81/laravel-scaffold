@@ -95,7 +95,8 @@ services:
       - ${APP_DOCKER_CODE_HOST_PATH}:${APP_DOCKER_CODE_CONTAINER_PATH}
       - ${APP_DOCKER_CODE_HOST_PATH}/.env.docker:${APP_DOCKER_CODE_CONTAINER_PATH}/.env
     working_dir: /app
-    entrypoint: [ 'composer', '--ignore-platform-reqs' ]
+    # entrypoint: [ 'composer', '--ignore-platform-reqs' ]
+    entrypoint: [ 'composer' ]
 
   #  npm:
   #    image: node:13.7

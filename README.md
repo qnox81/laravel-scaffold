@@ -43,5 +43,31 @@ $ docker-compose run artisan migrate
 $ docker-compose run yarn watch
 ```
 
+## Jetstream + Intertia + Tailwind
+
+1. install Jetsream
+```bash
+$ docker-compose run composer require laravel/jetstream
+```
+
+2. Install Jetstream With Inertia
+```bash
+$ docker-compose run artisan jetstream:install inertia
+```
+
+3. install dependencies
+```bash
+$ docker-compose run yarn
+```
+
+4. compile assets
+```bash
+$ docker-compose run yarn dev
+```
+
+5. run migration
+```bash
+$ docker-compose run artisan migrate
+```
 ## Licence
 MIT :)
