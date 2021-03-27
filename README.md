@@ -34,16 +34,16 @@ $ docker-compose up -d
 
 - wait until `mysql` and `yarn` containers stop initial boot
 
-3. run Laravel migration
-
-```bash
-$ docker-compose run artisan migrate
-```
-
-4. generate Laravel key for docker env
+3. generate Laravel key for docker env
 
 ```bash
 $ docker-compose run artisan key:gen
+```
+
+4. run Laravel migration
+
+```bash
+$ docker-compose run artisan migrate
 ```
 
 5. compile asserts
