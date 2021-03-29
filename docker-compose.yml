@@ -67,6 +67,9 @@ services:
       - ./docker/app/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
       - ./docker/app/app.ini:/usr/local/etc/php/conf.d/app.ini
       - ./docker/app/www.conf:/usr/local/etc/php-fpm.d/www.conf
+      - ./docker/_data/logs/php-xdebug.log:/var/log/xdebug.log
+      # - ./docker/_data/logs/php-error.log:/var/log/error.log
+      # - ./docker/_data/logs/php-access.log:/var/log/access.log
       - /var/run/docker.sock:/var/run/docker.sock
 
   redis:
