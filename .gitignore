@@ -7,6 +7,10 @@
 /node_modules
 /public/hot
 /public/storage
+public/js/
+public/css
+public/img
+public/mix-manifest.json
 /storage/*.key
 /vendor
 .env
